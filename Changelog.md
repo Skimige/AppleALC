@@ -1,5 +1,17 @@
 AppleALC Changelog
 ==================
+#### v1.4.5
+- Update MuteGPIO and AMP Values ALC255 layout-id 21 by Andres ZeroCross
+- Added ALC272 layout-id 21 for  Lenovo All In One PC C440 by Andres ZeroCross
+- Conflict patches for NUC7 HDMI audio are deleted.
+
+#### v1.4.4
+- Added ALC269 layout-id 12 for Asus Vivobook S200CE by chunnann
+- Update ALC269 layout-id 19 for Asus Vivobook S300CA by chunnann
+- Update ALC230 layout-id 20 to fix sleep after wake by ameenjuz
+- Added CX8150 layout-id 22 for ASUS VivoBook S405UA-EB906T by Andres ZeroCross
+- Added ALC285 layout-id 31 for Thinkpad X1E 8750H version by Flymin
+
 #### v1.4.3
 - Added support for `No-hda-gfx` HDEF property disabling IGPU digital audio
 - Added CX8050 layout-id 13 for ASUS S410U/X411U by cowpod
