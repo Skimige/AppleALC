@@ -1,8 +1,226 @@
 AppleALC Changelog
 ==================
+#### v1.6.6
+- Added ALC256 layout-id 24 for Intel NUC NUC10i5FNH by Andres ZeroCross
+- Added Conexant CX11970 (CX8400) layout-id 13 for Acer Swift 3 SF31* (Ice Lake) by m0d16l14n1
+- Added ALCS1200A layout-id 7 for B550M Gaming Carbon WIFI by Kila2
+- Try to solve wake up mute for GP75 9SD by Win7GM
+- Added ALC256 layout-id 33 for Huawei Matebook D15 MRC-W10 by im1ke
+- Added ALC892 layout-id 23 for ASRock B365 Pro4 by TheHackGuy
+- Fixed ALC221 layout-id 11 for HP6300/8300 rear line-in jack by adding DSP functions by aloha-cn
+
+
+#### v1.6.5
+- Added ALC236 for Lenovo IdeaPad 330S-14IKB by Ab2774
+- Some updates and revisions for ALC236 LayoutID 36 by volcbs
+- Added ALC897 for GIGABYTE Z590 Gaming X by Sergey_Galan 
+- Added ALC294 layout-id 99 for ASUS ROG GU502LV by htmambo
+- Added ALC256 layout-id 99 for XiaoMiPro 2020 by htmambo
+- Added ALC897 layout-id 23 for Chuwi-CoreBookX14 by weachy
+- Added ALC256 layout-id 20 for Asus AIO PC V222UAK-WA541T by andreszerocross
+- Added ALC236 layout-id 23 for Lenovo Air 13 IML(S530-13IML) by JudySL
+
+#### v1.6.4
+- Added 10.4 and 10.5 support, and 10.6 and 10.7 support in 32-bit mode
+- Update STAC9200 layout-id 11 to support 10.4 to 10.6
+- Added STAC9205 layout-id 11 for Dell Inspiron 1520 and Latitude D630
+- Fixed crash on GPUs without digital audio support introduced in 1.6.1
+- Added ALC623 layout-id 21 for Lenovo M70T by Andres ZeroCross
+- Seperated Laptop/Desktop patches for 8086:A171 to fix HDMI audio on Intel NUC
+- Added ALC236 layout-id 36 for Lenovo Ideapad 510s 14isk by volcbs
+- Added ALC235 layout-id 12 for Dell Optiplex 7040 MT by wern-apfel
+- Improved CA0132 layout-id 7 by removing not needed MuteGPIO by wern-apfel
+- Added ALC235 layout-id 8 for Intel NUC 8 by wern-apfel
+- Added ALC269 layout-id 69 for MSI GF63 Thin 9SEXR  by Vorshim92
+- Added ALC289 layout-id 93 for XPS 9500 4k by sweet3c
+- Added ALC892 layout-id 32 for custom G4/G5mod
+
+#### v1.6.3
+- Update ALC289 layout-id 87 by GitNaufal
+- Update ALC235 layout-id 18 for AsRock 310 BB by viorel78
+
+#### v1.6.2
+- Added constants for macOS 12 support
+- Added 10.6 and 10.7 support in 64-bit mode
+- Fixed HDMI Audio 0xA171 for Acer VX5-591G by dongcodebmt
+- Added ALC256 layout-id 70 for Hasee KingBook X57S1 by m0d16l14n1
+- Update WakeConfigData for ALC255 layout-id 96 by wozhinengpa
+
+#### v1.6.1
+- Fixed broken data in CS4206's layout76.xml
+- Added PathMapID 4206 and 8800 for ALC885's Layout 67 and 73
+- Fixed broken data in ALC289's layout87.xml
+- Fixed automatic resource formatting on build
+- Fixed ALC885's Info.plist Platforms entry
+- Added 400 Series (0xF1C8 Z490 + Intel 11 Gen) PCH HD Audio Controller
+- Fixed `alc-verb` device indexing giving varying results over reboots
+- Added device listing with indices via `-L`/`-l` in `alc-verb`
+- Added AppleALCU kext variant for digital-only audio setup
+- Disabled kext patching for verb support and delays when not requested
+- FIxed replace count in `WhiskeyLake` HDA patches
+- Separated Intel `WhiskeyLake` laptop and desktop patches
+- Added ALC1220 layout-id 35 for MSI GP75 9SD by Win7GM
+- Added ALC1200 (display as ALCS1200A) layout-id 69 for Asrock Z490M ITX/AC by Lorys89 & Vorshim92
+- Added ALC293 layout-id 30 for HASEE ZX8-CT5DA by RushiaBoingBoing
+- Added ALC255 layout-id 96 for dell 5559 by Bhavin
+- Fix mute on Conxexant CX 20724 by Human7900
+- Added ALC1220 layout-id 17 for Gigabyte Z490 Vision G manual SP/HP by NIBLIZE
+- Added ALC255 layout-id 82 for minisforum U820 by daliansky
+- Added ALC282 layout-id 21 for TinyMonster ECO by DalianSky
+
+#### v1.6.0
+- Added `use-layout-id` property to use `layout-id` as is on Macs
+- Added `use-apple-layout-id` property to use `apple-layout-id` as `layout-id` on Macs
+- Fixed CS4206 and ALC885 support for legacy Macs
+- Improvement ALC289 layout-id 87 for Alienware m15 by GitNaufal
+- Added ALC1220 layout-id 98 for Mi Gaming Notebook Creator by Xsixu
+- Added ALC1220 layout-id 100 for Hasee_G8-CU7PK by R-a-s-c-a-l
+
+#### v1.5.9
+- Added CS4206 layout-id 24 and 60
+- Added 500 Series (0xF0C8 Z590 + Intel 10 Gen) PCH HD Audio Controller
+- Added 500 Series (0x43C8 Z590 + Intel 11 Gen) PCH HD Audio Controller
+- Added ALC289 layout-id 87 for Alienware m15 by GitNaufal
+- Added ALC289 layout-id 15 for Dell 7730 Precision CM240 by MacPeet
+- Added ALC897 layout-id 69 for MSI-Z490-A Pro by mathcampbell
+- Added IDT 92HD95 layout-id 14 for LenovoG710 by Svilen88
+- Added ALC235 layout-id 18 for asrock 310 bb by viorel78
+- Added controller patch for 100 Series (8086:A170) by dhinakg
+
+#### v1.5.8
+- Improved resource packaging by stripping optional tags
+- General enhancement & improvement for ALC230 by Ab2774
+- Added ALC274 layout-id 35 by jackjack1-su
+
+#### v1.5.7
+- Add support for legacy Macs
+- Added ALC289 layout-id 99 for Dell XPS 13 9300 by DalianSky
+- Added ALC225 layout-id 90 for Dell Inspiron 5379 by fast900
+- Added ALC274 layout-id 28 working speakers/mic Maingear Element 3 (TongFang 17 Barebone) by 343iChurch
+- Added ALC256 layout-id 77 for Asus x430_s4300FN by fangf2018
+- Added ALC256 layout-id 88 for Asus x430_s4300FN by fangf2018
+- Fix Mic for ALC221 layout-id 88 HP ProDesk 400 G2 Desktop Mini PC
+- Added ALC897 layout-id 66 for ASUS_PRIME_B460M-K by Dynamix1997
+
+#### v1.5.6
+- Improved `alc-verbs` availability checking
+- Add ALC256 layout-id 67 for Dell OptiPlex 7080
+- Add ALC222 layout-id 11 for HP EliteDesk 800 G6 Mini
+- Add ALC256 layout-id 69 for Xiaomi Pro Enhanced 2019
+- Add ALC235 layout-id 37 for Lenovo IdeaCentre Mini 5
+- CX20751_2 fixed mic gain slider in Big Sur
+
+#### v1.5.5
+- Fixed kext loading issues on 10.8 and similar operating system
+- Added a requirement to inject `alc-verbs` or use `alcverbs=1` argument for custom verbs
+- Added ALC255 layout-id 66 for Dell Optiplex7060/7070MT(Separate LineOut) by Dynamix1997
+- Fixed Jack Sense and EAPD on ALC 236 layout ID 14 by erinviegas
+- Added VIA VT2021 layout-id 13 support for all 3 analog lineOUTs on Gigabyte GA-Z77X-D3H (rev. 1.0) by enrysan0
+- Added ALC283 layout-id 13 for (Alldo)Cube Mix Plus by Aldo97
+- Fix PinConfigs ALC662v3 for Lenovo M415-D339
+- Added ALC295 layout-id 22 for HP Spectre x360 by aleixjf
+- Added ALC285 layout-id 71 for Spectre x360 ap0xxx by jpuxdev
+- Added ALC221 layout-id 88 for HP ProDesk 400 G2 Desktop Mini PC by dragonbbc
+- Added CX8200 layout-id 80 for LG Gram 17 17z990 by rdmitry0911
+- Added ALC269 layout-id 91 for Chuwi CoreBox by Luca1991
+- Modify CX20632 layout-id 20 - Added Mic support and outputs mute controls - HP EliteDesk 800 G4/G5 mini by sisumara
+- Added ALC671 layout-id 16 for Fujitsu Q558 by sisumara
+- Added `-dev` option to alc-verb to support sending commands to all codecs
+
+#### v1.5.4
+- Improved Ice Lake controller patches by fewtarius
+- Added verb sending functionality from userspace by black-dragon74
+- Added ALC235 (display as ALC233) layout-id 35 for Lenovo Qitian M420-D046(C) by crysehillmes
+- Added ALC892 layout-id 100 for MSI Z370-A PRO by GeorgeWan
+- Added ALCS1200A layout-id 51 for for ASROCK Z490 Steel Legend by GeorgeWan
+- Added ALC662 layout-id 66 for Lenovo Qitian M415-D339 by static-host
+- Fixed ALC285 layout-Id 21 for X1C6 (by @fewtarius)
+- Added ALC272 layout-id 12 for Lenovo Y470 by amu_1680c
+- Added patch CX20751/2 by vasishath to fix internal mic gain adjustment (this fix microphone volume slider in system preferences)
+- Added ALC230 layout 13 & 20 Jack Sense and EAPD support and add WakeConfigData to layout 13
+- Added ALC290 layout-id 10 for HP Envy 15t-k200 w/ Beats Audio 2.1 by temp1122-sys
+
+#### v1.5.3
+- Fix ALCS1200A lost ID 11 by owen0o0
+- Added MacKernelSDK with Xcode 12 compatibility
+- Added CX20632 layout-id 20 for HP Elitedesk 800 G5 Mini by phucnguyen2411
+- Added ALC269VC layout-id 24 for Hasee U45S1 by zero816
+- Added ALC283 layout-id 45 for NUC7 by micsell
+- Added ALC235 layout-id 99 for Lenovo TianYi 510s Mini by DalianSky
+- Added ALC1150 layout-id 99 for Gigabyte GA-Z97X-UD5H by DalianSky
+- Correct layout 13 for IDT92HD87B2/4
+
+#### v1.5.2
+- Added missing layout7.xml for CA0132
+- Added 400 series 0xA3F0 controller patch by goomadao
+- Added ALCS1200A layout-id 11 for MAG-Z490-TOMAHAWK by owen0o0
+- Added ALC269 layout-id 128 for Laptop NS4SL01 by ryahpalma
+- Added ALCS1200A layout-id 50 for Gigabyte B460M Aorus Pro by VanXNF
+- Added ALC280 layout-id 17 for Dell Optiplex 9020 SFF by pkendall64
+- Added ALC236 layout-id 14 for Lenovo 330S by erinviegas
+- Added ALC887 layout-id 12 for ASUS H81M-D by VanXNF
+- Added ALCS1200A layout-id 49 for Asrock Z490M-ITX by VanXNF
+- Added ALC269 layout-id 23 for Thinkpad T430 with fixed micophone inputlevel by haotiangood
+- Added ALC245 layout-is 11 and 12 for Lenovo by soto2080
+- Added ALC245 layout-id 13 for HP Omen 15 2020 by lunjielee
+- Added ALC287 layout-id 11 for HP Omen 15 2020 by lunjielee
+
+#### v1.5.1
+- Set MinKernel Catalina for 400 Series
+- Added constants for 11.0 support
+- Added 400 series 0x6c8 and 0x2c8 controller patch (thanks @lvs1974)
+- Added ALC295 layout-id 24 for HP Pavilion / OMEN-2 by zty199
+- Update CA0132 layout-id 7, 4, 2, 1 by wern-apfel
+- Added IDT92HD95 layout-id 11 by wern-apfel
+- Added Icelake Smart Sound Technology Audio Controller
+- Fix Headphone NodeID，Add SPDIFOut NodeID，ALC255 layout-id 20 for DELL 7447 by was3912734
+- Added ALC290 layout-id 15 for HP m6 n015dx by MacPeet
+- Added ALC285 layout-61 for Lenovo Yoga C740 by fewtarius
+- Added CA0132 LayoutID 99 - 5.1 channel for Alienware-M17X-R4 by DalianSky
+- Added ALC289 layout-id 11 for alienware m17r2 by leeoem
+
+#### v1.5.0
+- Update ALC283 layout-id 88 by xiaoleGun
+- Fixed accidental reading of `alc-layout-id` on non-Apple firmwares
+- Add patch to fix internal mic gain adjustment Conexant CX8050
+- Move ALC255 layout-id 7 to layout-id 86
+- Added ALC257 layout-id 86 for Lenovo T480 by armenio
+- Fixed can't activate mute problem Conexant CX8070 layout-id 15 by lietxia
+- Added ALC255 layout-id 20 for DELL 7447 by was3912734. Add Subwoofer drive.
+- Added ALC662 layout-id 18 for MP67-DI/ESPRIMO Q900 by ryahpalma
+- Added ALC256 layout-id 19 for Matebook X Pro 2019 by Durian-Life
+- Added ALC256 layout-id 76 (4CH) for Matebook X Pro 2019 by Durian-Life
+
+#### v1.4.9
+- Added IDT92HD73E1X5 layout-id 15 for HP Envy h8 1425eg by MacPeet
+- Fix Headphone NodeID ALC269VC layout-id 22 Veritron Z4640G by Andres ZeroCross
+- Added ALC255 layout-id 29 for Acer Predator G3-571 by dhinakg
+- Added ALC256 layout-id 17 for Magicbook with 4CH by hjmmc
+- Updated ConfigData & Added WakeConfigData for ALC295 layout-id 14 by hieplpvip
+- Added ALC671 layout-id 88 for HP 280 Pro G4 by lcp6668
+- Added ALC294 layout-id 22 for ASUS ROG GL504GW by cowpod
+- Added ALC892 layout-id 22 for ASRock Z390m-ITX/ac by imEgo
+- Added wakeconfigdata for ALC230 layout-id 20 by ameenjuz
+- Added ALC235 layout-id 24 for ASUS TUF FX705GM by therealgudv1n
+- Added ALC892 layout-id 20 for GIGABYTE Z390M GAMING by bokeylee
+- Added ALC298 layout-id 16 for Dell Precision 5520 by Pingren
+- Added ALC269 layout-id 77 for Thunderobot-G7000S by Phoenix-Liang
+- Rename 400 series LP controller, add 400 series PCH-H controller
+
 #### v1.4.8
 - MaxKernel HS for GM/GP
 - Support startup delay for AppleHDAController via `alc-delay` property or `alcdelay` boot-arg (in ms)
+- Guarded TCSEL change to TC0 with `alctsel=<01 00 00 00>` property or `alctsel=1` boot-arg
+- Improved performance with Lilu 1.4.3 APIs
+- Added ALC257 layout-id 99 and100 for Lenovo XiaoXin Pro 2019 by DalianSky
+- Added ALC283 layout-id 88 for DELL R14 3437 by Zoran
+- Add mute button to ALC230 layout 13 by Ab2774
+- Update for Better Input Range ALC 235 by Andres ZeroCross
+- Added ALC269VC layout-id 22 for Acer Veriton Z4640G by Andres ZeroCross
+- Updated ConfigData & Added WakeConfigData to fix CodecCommander dependency CX20751/2 layout-id 28 LineIn Sniki
+- Updated ConfigData & Updated WakeConfigData to fix CodecCommander dependency ALC221 layout-id 11 LineIn(s) by Sniki
+- Added ALC255/ALC3234 layout-id 7 for Dell 7348 by armenio
+- Fix Conexant CX8050 LineIn for headsets with combo jack
 
 #### v1.4.7
 - Added support for Intel C620 series PCH Audio

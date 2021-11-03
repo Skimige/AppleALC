@@ -84,6 +84,22 @@
 				<key>Path</key>
 				<string>layout23.xml.zlib</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>zty199 - ALC295 for HP Pavilion / OMEN-2</string>
+				<key>Id</key>
+				<integer>24</integer>
+				<key>Path</key>
+				<string>layout24.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>aleixjf — Realtek ALC295 for HP Spectre x360 13-ac0XX and 13-w0XX models</string>
+				<key>Id</key>
+				<integer>22</integer>
+				<key>Path</key>
+				<string>layout22.xml.zlib</string>
+			</dict>
 		</array>
 		<key>Platforms</key>
 		<array>
@@ -158,6 +174,22 @@
 				<integer>23</integer>
 				<key>Path</key>
 				<string>Platforms23.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>zty199 - ALC295 for HP Pavilion / OMEN-2</string>
+				<key>Id</key>
+				<integer>24</integer>
+				<key>Path</key>
+				<string>PlatformsID.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>aleixjf — Realtek ALC295 for HP Spectre x360 13-ac0XX and 13-w0XX models</string>
+				<key>Id</key>
+				<integer>22</integer>
+				<key>Path</key>
+				<string>Platforms22.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>

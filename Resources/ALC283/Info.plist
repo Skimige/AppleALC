@@ -38,6 +38,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>ALC283 for AlldoCube/Cube Mix Plus by Aldo97</string>
+				<key>Id</key>
+				<integer>13</integer>
+				<key>Path</key>
+				<string>layout13.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>MacPeet - alc283 for LENOVO IDEAPAD 14</string>
 				<key>Id</key>
 				<integer>15</integer>
@@ -54,11 +62,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Realtek ALC283 for NUC by mikes</string>
+				<key>Id</key>
+				<integer>45</integer>
+				<key>Path</key>
+				<string>layout45.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ASRock DeskMini 110(H110M-STX) ALC283 by licheedev</string>
 				<key>Id</key>
 				<integer>66</integer>
 				<key>Path</key>
 				<string>layout66.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC283 for DELL R14 3437 by Zoran</string>
+				<key>Id</key>
+				<integer>88</integer>
+				<key>Path</key>
+				<string>layout88.xml.zlib</string>
 			</dict>
 		</array>
 		<key>Platforms</key>
@@ -89,6 +113,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>ALC283 for AlldoCube/Cube Mix Plus by Aldo97</string>
+				<key>Id</key>
+				<integer>13</integer>
+				<key>Path</key>
+				<string>Platforms13.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>MacPeet - alc283 for LENOVO IDEAPAD 14</string>
 				<key>Id</key>
 				<integer>15</integer>
@@ -105,11 +137,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Realtek ALC283 for NUC7 by mikes</string>
+				<key>Id</key>
+				<integer>45</integer>
+				<key>Path</key>
+				<string>Platforms45.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ASRock DeskMini 110(H110M-STX) ALC283 by licheedev</string>
 				<key>Id</key>
 				<integer>66</integer>
 				<key>Path</key>
 				<string>Platforms66.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC283 for DELL R14 3437 by Zoran</string>
+				<key>Id</key>
+				<integer>88</integer>
+				<key>Path</key>
+				<string>Platforms88.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>
